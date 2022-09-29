@@ -9,23 +9,37 @@ function App() {
  let gen=document.getElementById("gen");
  let input=document.getElementById("set-length")
   let value=input.value;
- generated.textContent="";
- gen.textContent="";
- for(let i=0;i<value;i++){
-  let RandomNumberOne=Math.floor(Math.random()*characters.length)
-   generated.textContent+=characters[RandomNumberOne];
-  console.log("The Generated text is:"+generated.textContent);
-
-  let RandomNumberTwo=Math.floor(Math.random()*characters.length)
+  if(value===""){
+    alert("Password Length cannot be empty")
+  }else if(value>20){
+    alert("The length cannot be greater then 20")
+  }else{
+    generated.textContent="";
+    gen.textContent="";
+    for(let i=0;i<value;i++){
+     let RandomNumberOne=Math.floor(Math.random()*characters.length)
+      generated.textContent+=characters[RandomNumberOne];
+     console.log("The Generated text is:"+generated.textContent);
+   
+     let RandomNumberTwo=Math.floor(Math.random()*characters.length)
+    
+       gen.textContent+=characters[RandomNumberTwo]
+  }
  
-    gen.textContent+=characters[RandomNumberTwo]
  }
  
    }
    function SetLength(){
     let myinput=document.getElementById('set-length')
     let length=myinput.value;
-    alert("The Password Length is set to "+length);
+    if(length===""){
+      alert("the length cannot be empty")
+    }else if(length>20){
+      alert("the password length cannot be grater then 20")
+    }else{
+      alert("The Password Length is set to "+length);
+    }
+   
    }
    
  

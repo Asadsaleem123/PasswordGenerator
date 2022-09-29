@@ -1,13 +1,210 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+}
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  position: fixed;
+ 
+  width: 100%;
+  height: 100vh;
+  background: #1C1C1C;
+  border: 3px solid blueviolet;
+}
+.content{
+ 
+  margin: 0 auto;
+  width: 550px;
+  height: 550px;
+  background: #1F2937;
+  left: 62px;
+  margin-top: 64px;
+  bottom: 64px;
+  right: 641px;
+  border: 2px solid black;
+
+}
+.headings{
+  margin:115px 144px 355px 52px;
+  width: 354px;
+  height: 80px;
+  box-sizing: border-box;
+  
+}
+ .p1{
+  margin: 0;
+  color: white;
+  font-family: 'Karla';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 40px;
+/* or 100% */
+
+letter-spacing: -0.025em;
+}
+.p2{
+  margin: 0;
+  color:#4ADF86;
+  font-family: 'Karla';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 40px;
+/* or 100% */
+
+letter-spacing: -0.025em;
+
+}
+.insecure{
+  width: 372px;
+  height: 28px;
+  margin-left: 52px;
+  margin-top: 10px;
+  margin: 0;
+}
+.insecure p{
+  color: #D5D4D8;
+  margin:0;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+margin: 0 auto;
+margin-top: 5px;
+}
+.btn{
+  cursor: pointer;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 17px 9px 15px;
+gap: 12px;
+color: white;
+
+width: 191px;
+height: 42px;
+left: 52px;
+margin-top: 30px;
+
+
+background: #10B981;
+/* shadow/sm */
+
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 6px;
+}
+.generated{
+ display:inline-block;
+width: 211px;
+height:39px;
+margin-left: -1%;
+margin-top: 5%;
+background: #273549;
+border-radius: 6px;
+color: white;
+padding: 10px;
+padding-left: 13px;
+}
+.gen{
+ display: inline-block;
+width: 211px;
+height: 39px;
+margin-left: 2%;
+top: 396px;
+color: white;
+background: #273549;
+border-radius: 6px;
+padding: 10px;
+padding-left: 13px;
+}
+.g{
+  position: absolute;
+  width: 70%;
+  
+
+}
+#length_btn{
+margin-left: 2.5px;
+cursor: pointer;
+padding: 6px 10px 6px 10px;
+margin-top: 1px;
+color: white;
+background-color: #10B981;
+}
+#set-length{
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 185px;
+}
+@media only screen and (max-width:391px){
+.content{
+margin-left: -20px;
+height: 100vh;
+margin-top: 0;
+}
+#length_btn{
+  padding: 4.5px 10px 6px 10px;
+}
+.gen{
+  margin-left: -1.5px;
+}
+}
+@media only screen and (max-width:376px){
+  .content{
+    margin-left: -25px;
+    height: 100vh;
+    margin-top: 0;
+  }
+  .gen{
+    margin-left: -1.5px;
+  }
+}
+@media only screen and (max-width:394px){
+  .content{
+    margin-left: -30px;
+    height: 100vh;
+    margin-top: 0;
+  }
+  .gen{
+    margin-left: -1.5px;
+  }
+}
+@media only screen and (max-width:413px){
+  .content{
+    margin-left:-30px;
+    height: 100vh;
+    margin-top: 0;
+  }
+  .gen{
+    margin-left: -1.5px;
+  }
+}
+@media only screen and (max-width:415px){
+  .content{
+    margin-left:-30px;
+    height: 100vh;
+    margin-top: 0;
+  }
+  .gen{
+    margin-left: -1.5px;
+  }
+}
+@media only screen and (max-width:541px){
+  .content{
+    margin-left:-30px;
+    height: 100vh;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .gen{
+    margin-left: -1.5px;
+  }
 }
